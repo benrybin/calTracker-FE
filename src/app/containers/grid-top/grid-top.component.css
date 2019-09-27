@@ -1,0 +1,9 @@
+
+.base {
+  height: 75px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--color-primary);
+  padding: 1rem;
+}
