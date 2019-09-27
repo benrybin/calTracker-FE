@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+/* General rules */
+@import 'assets/_vars.css';
+
+* {
+  font-family: nunito-light, sans-serif;
+  box-sizing: border-box;
+  color: var(--color-white);
+}
+
+html,
+body {
+  background-color: var(--color-black);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: nunito-black;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  color: var(--color-secondary);
+}
+
+h1 {
+  font-size: 22pt;
+}
+
+.gutters {
+  max-width: 1076px;
+  margin: 0 auto;
+}

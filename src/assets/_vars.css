@@ -1,0 +1,18 @@
+:root {
+  --color-black: #222;
+  --color-white: #efefef;
+  --color-primary: #00527f;
+  --color-secondary: #00a4ff;
+  --color-ternary: #7fd2ff;
+}
+
+@font-face {
+  font-family: nunito-light;
+  src: url("Nunito-Light.ttf");
+}
+
+
+@font-face {
+  font-family: nunito-black;
+  src: url("Nunito-Black.ttf");
+}
