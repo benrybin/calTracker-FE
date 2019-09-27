@@ -1,0 +1,37 @@
+.base {
+  padding: 0rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+li {
+  display: flex;
+  margin: 0 1rem;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+li a {
+  color: var(--color-secondary);
+  width: 100%;
+  text-decoration: none;
+}
+
+li a.activeLink {
+  text-decoration: underline;
+  color: var(--color-ternary);
+}
+
+li a:hover {
+  color: var(--color-ternary);
+}
