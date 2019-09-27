@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { MealEntryComponent } from './meal-entry/meal-entry.component';
 import {HttpClientModule} from '@angular/common/http'
 import { FormsModule }   from '@angular/forms';
+import { DailyTrackerComponent } from './daily-tracker/daily-tracker.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MealEntryComponent
+    MealEntryComponent,
+    DailyTrackerComponent
   ],
   imports: [
     BrowserModule,
