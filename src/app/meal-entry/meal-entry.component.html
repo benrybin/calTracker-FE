@@ -1,0 +1,33 @@
+<h1>Add Meal</h1>
+
+
+<div class="meal input">
+
+    <select [(ngModel)]="meal" id="">
+        <option value="" disabled selected>select a category</option>
+        <option *ngFor="let meal of typeofmeal" [value]="meal">{{meal}}</option>
+      
+    </select>
+        <div class="form-group">
+            <button type="button" class="button1" (click)="onSubmit(300,meal)">300 Calories</button>
+        </div>
+        <div class="form-group">
+            <button type="button" class="button2" (click)="onSubmit(400,meal)">400 Calories</button>
+        </div>
+        <div class="form-group">
+            <button type="button" class="button3" (click)="onSubmit(500,meal)">500 Calories</button>
+        </div>
+        <div class="form-group">
+            <button type="button" class="button4" (click)="onSubmit(600,meal)">600 Calories</button>
+        </div>
+        <div class="form-group">
+            <button type="button" class="button5" (click)="onSubmit(800,meal)">800 Calories</button>
+        </div>
+        <div class="form-group">
+            <button type="button" class="button6" (click)="onSubmit(1000,meal)">1000 Calories</button>
+        </div>
+
+    
+
+
+</div>
