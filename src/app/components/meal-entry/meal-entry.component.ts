@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Meal } from '../../models/meal';
 import { MealService } from '../../services/meal.service';
+import { RegisterMealPageComponent } from 'src/app/containers/pages/register-meal-page/reigster-meal-page.component';
 
 @Component({
   selector: 'app-meal-entry',
@@ -12,6 +13,7 @@ export class MealEntryComponent implements OnInit {
   currentDate: string;
   typeofmeal = ['Breakfast', 'Lunch', 'Dinner'];
   meal: string;
+  response: any;
   constructor(private mealService: MealService) {}
 
   ngOnInit() {
@@ -31,8 +33,8 @@ export class MealEntryComponent implements OnInit {
     this.currentMeal.setCalCount(calories);
     this.currentMeal.setDate(this.currentDate);
     this.currentMeal.setMealType(meal);
-    this.mealService.addMeal(this.currentMeal).subscribe();
-    console.log(this.meal);
+    this.mealService.addMeal(this.currentMeal).subscribe(res => this.response =res);
+    console.log(this.response);
     // console.log(this.currentMeal)
   }
 }
