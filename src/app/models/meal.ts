@@ -1,6 +1,6 @@
 export class Meal {
   calCount: number;
-  date: string;
+  date: String;
   mealType: string;
   constructor() {}
 
@@ -10,7 +10,7 @@ export class Meal {
   setCalCount(calCount: number) {
     this.calCount = calCount;
   }
-  setDate(date: string) {
+  setDate(date: String) {
     this.date = date;
   }
   setMealType(meal: string) {

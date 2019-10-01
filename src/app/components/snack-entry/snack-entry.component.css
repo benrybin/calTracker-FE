@@ -1,0 +1,46 @@
+.section {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  select {
+    background-color: var(--color-black);
+    padding: .25rem .5rem;
+    border: 1px solid var(--color-ternary);
+    width: 400px;
+  }
+  
+  .flex-button-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .flex-button-row button {
+    flex: 1;
+    width: 1fr;
+    margin: 0 1rem;
+  }
+  
+  .flex-button-row button:first-child {
+    margin-left: 0;
+  }
+  
+  .flex-button-row button:last-child {
+    margin-right: 0;
+  }
+  
+  button {
+    padding: .5rem .75rem;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: nunito-black;
+  }
+  button:hover {
+    cursor: pointer;
+    border: 2px solid var(--color-ternary);
+  }
